@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Easy HTML</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<!-- Ajouter une ligne :
+    <div class="container">
+      <!->
+      <div class="containers">
+        <h2 class="titles">Titre</h2>
+        <p class="info">Represent an important part of the document</p>
+        <div class="codewindow">
+        <code class="code">&ltx&gtCeci est le morceau de code.&lt&#x2Fx&gt</code>
+        </div>
+      </div>
+      <!->
+      <div class="containers">
+        <h2 class="titles">Titre</h2>
+        <p class="info">Represent an important part of the document</p>
+        <div class="codewindow">
+          <code class="code">&ltx&gtCeci est le morceau de code.&lt&#x2Fx&gt</code>
+        </div>
+      </div>
+    </div>
+-->
+
+    <!-- Title and Home button -->
+    <h1 class="bigtitle"><a href="#" target="_self">Easy HTML</a></h1>
+
+    <!-- Menu -->
+    <nav>
+      <ul class="navigator">
+        <li><a href="https://jsfiddle.net/" target="_blank">Live Code</a></li>
+        <li>-</li>
+        <li><a href="#template">Template</a></li>
+        <li>-</li>
+        <li><a href="https://caniuse.com/" target="_blank">Can I use ?</a></li>
+        <li>|</li>
+        <li><a href="#general">General</a></li>
+        <li>-</li>
+        <li><a href="#text">Text</a></li>
+        <li>-</li>
+        <li><a href="#links">Links</a></li>
+        <li>-</li>
+        <li><a href="#medias">Images & Medias</a></li>
+        <li>-</li>
+        <li><a href="#lists">Lists</a></li>
+        <li>-</li>
+        <li><a href="#forms">Forms</a></li>
+        <li>-</li>
+        <li><a href="#tables">Tables</a></li>
+        <li>-</li>
+        <li><a href="#special">Special Characters</a></li>
+      </ul>
+    </nav>
+
+
+    <!-- HTML Template -->
+    <div class="categories">
+      <h1 class="categories" id="template">HTML Template</h1>
+    </div> 
+
+    <div class="template">
+      <code>
+        &lt;!DOCTYPE html&gt;
+        <br>
+        &lt;html&gt;
+        <br>
+          &nbsp;&nbsp;&lt;head&gt;
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;&lt;&#x2F;title&gt;
+        <br>
+          &nbsp;&nbsp;&lt;&#x2Fhead&gt;
+        <br>
+        &lt;html&#x2F;&gt;
+      </code>
+    </div>
+
+
+    <!-- General -->
+    <div class="categories">
+      <h1 class="categories" id="general">General</h1>
+    </div>    
+
+    <div class="container">
+      <!-- Doctype -->
+      <div class="containers">
+        <h2 class="titles">Doctype</h2>
+        <p class="info">HTML document type declaration. <br> Might be at the beginning of every html page.</p>
+        <div class="codewindow">
+          <code class="code">&lt;!DOCTYPE html&gt;</code>
+        </div>
+      </div>
+      <!-- Paragraphe -->
+      <div class="containers">
+        <h2 class="titles">Paragraphe</h2>
+        <p class="info">Represent a paragraph of text.<br>Can include image as decoration.</p>
+        <div class="codewindow">
+        <code class="code">&lt;p&gt;This is a paragraphe.&lt;&#x2F;p&gt;</code>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Html -->
+      <div class="containers">
+        <h2 class="titles">Html</h2>
+        <p class="info">Represent the parent markup of all documents that use html language.</p>
+        <div class="codewindow">
+        <code class="code">
+          &lt;html&gt;
+          <br/>
+          &nbsp;&nbsp;&lt;head&gt;
+          <br/>
+          &nbsp;&nbsp;&lt;&#x2F;head&gt;
+          <br/>
+          &nbsp;&nbsp;&lt;body&gt;
+          <br/>
+          &nbsp;&nbsp;&lt;&#x2F;body&gt;
+          <br/>
+          &lt;&#x2F;html&gt;</code>
+        </div>
+      </div>
+      <!-- Head -->
+      <div class="containers">
+        <h2 class="titles">Head</h2>
+        <p class="info">Represent the header of the document.</p>
+        <div class="codewindow">
+          <code class="code">&lthead&gt
+            <br/>
+            &nbsp;&nbsp;&lt;meta charset="UTF-8"&#x2F;&gt;
+            <br>
+            &nbsp;&nbsp;&lt;title&gt;Title of the page&lt;&#x2F;title&gt;
+            <br/>
+            &lt;&#x2F;head&gt;
+          </code>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Meta -->
+      <div class="containers">
+        <h2 class="titles">Meta</h2>
+        <p class="info">Contains the encoding type of the page. <br/>Should be include between head tags.</p>
+        <div class="codewindow">
+        <code class="code">&nbsp&nbsp&ltmeta charset="UTF-8"&#x2F&gt</code>
+        </div>
+      </div>
+      <!-- Title -->
+      <div class="containers">
+        <h2 class="titles">Title</h2>
+        <p class="info">Title of the page, shows on the tab in browser.</p>
+        <div class="codewindow">
+          <code class="code">&lt;title&gt;Title of the page&lt;&#x2F;title&gt;
+          </code>
+        </div>
+      </div>
+    </div>
+
+    <!-- Elements -->
+    <div class="categories">
+      <h1 class="categories" id="elements">Elements</h1>
+    </div>   
+
+    <div class="container">
+      <!-- Div-->
+      <div class="containers">
+        <h2 class="titles">Div</h2>
+        <p class="info">Represent a block element in the document.</p>
+        <div class="codewindow">
+        <code class="code">&lt;div&gt;Ceci est le morceau de code.&lt;&#x2F;div&gt;</code>
+        </div>
+      </div>
+      <!-- Span -->
+      <div class="containers">
+        <h2 class="titles">Span</h2>
+        <p class="info">Represent an inline element in the document.</p>
+        <div class="codewindow">
+          <code class="code">&lt;span&gt;Ceci est le morceau de code.&lt;&#x2F;span&gt;</code>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Adress -->
+      <div class="containers">
+        <h2 class="titles">Adress</h2>
+        <p class="info">Represent an adress in the document. <br>Can be use between article tags or as a single element between body tags.</p>
+        <div class="codewindow">
+        <code class="code">&lt;address&gt;<br/>
+        &nbsp;&nbsp;&lt;a href="mailto:jim@rock.com"&gt;jim@rock.com&lt;&#x2F;a&gt;<br/>
+        &nbsp;&nbsp;&lt;a href="tel:+13115552368"&gt;(311) 555-2368&lt;&#x2F;a&gt;<br/>
+        &lt;&#x2F;address&gt;</code>
+        </div>
+      </div>
+      <!-- Article -->
+      <div class="containers">
+        <h2 class="titles">Article</h2>
+        <p class="info">Represent an independant element in the document.</p>
+        <div class="codewindow">
+          <code class="code">&lt;article&gt;This is an.&lt;&#x2F;article&gt;</code>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Blockquote -->
+      <div class="containers">
+        <h2 class="titles">Blockquote</h2>
+        <p class="info">Represent a quote block in the document. <br>You can add author name and source name.</p>
+        <div class="codewindow">
+        <code class="code">&lt;blockquote cite="https://www.huxley.net/bnw/four.html"&gt;<br/>
+          &nbsp;&nbsp;&lt;p&gt;Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.&lt;&#x2F;p&gt;<br/>
+          &nbsp;&nbsp;&lt;footer&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;—Aldous Huxley, &lt;cite&gt;Brave New World&lt;&#x2F;cite&gt;<br/>
+          &nbsp;&nbsp;&lt;&#x2F;footer&gt;<br/>
+      &lt;&#x2F;blockquote&gt;</code>
+        </div>
+      </div>
+      <!-- Br -->
+      <div class="containers">
+        <h2 class="titles">Br</h2>
+        <p class="info">Represent a line jump in the document.</p>
+        <div class="codewindow">
+          <code class="code">&lt;br&gt;</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text -->
+    <div>
+      <h1 class="categories" id="text">Text</h1>
+    </div>  
+
+    <div class="container">
+      <!-- Abbreviation -->
+      <div class="containers">
+        <h2 class="titles">Abbreviation</h2>
+        <p class="info">Represent an abbreviation.</p>
+        <div class="codewindow">
+        <code class="code">&lt;abbr&gt;This is an abbreviation.&lt;&#x2F;abbr&gt;</code>
+        </div>
+      </div>
+      <!-- Adress -->
+      <div class="containers">
+        <h2 class="titles">Adress</h2>
+        <p class="info">Represent an adress in the document. <br>Can be use between article tags or as a single element between body tags.</p>
+        <div class="codewindow">
+          <code class="code">&lt;address&gt;<br/>
+          &nbsp;&nbsp;&lt;a href="mailto:jim@rock.com"&gt;jim@rock.com&lt;&#x2F;a&gt;<br/>
+          &nbsp;&nbsp;&lt;a href="tel:+13115552368"&gt;(311) 555-2368&lt;&#x2F;a&gt;<br/>
+          &lt;&#x2F;address&gt;</code>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!--- Headings -->
+      <div class="containers">
+        <h2 class="titles">Headings</h2>
+        <p class="info">Represent headings in a document.</p>
+        <div class="codewindow">
+        <code class="code">&lt;h1&gt;This is a heading.&lt;&#x2F;h1&gt;
+        <br/>
+        &lt;h2&gt;This is a heading.&lt;&#x2F;h2&gt;
+        <br/>
+        &lt;h3&gt;This is a heading.&lt;&#x2F;h3&gt;
+        <br>
+        &lt;h4&gt;This is a heading.&lt;&#x2F;h4&gt;
+        <br/>
+        &lt;h5&gt;This is a heading.&lt;&#x2F;h5&gt;
+        <br/>
+        &lt;h6&gt;This is a heading.&lt;&#x2F;h6&gt;</code>
+        </div>
+      </div>
+      <!-- Strong -->
+      <div class="containers">
+        <h2 class="titles">Strong</h2>
+        <p class="info">Represent an important part of the document</p>
+        <div class="codewindow">
+          <code class="code">
+            &lt;strong&gt;This is a strong text&lt;&#x2F;strong&gt;</code>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Italic -->
+      <div class="containers">
+        <h2 class="titles">Italic</h2>
+        <p class="info">Represent an important part of the document</p>
+        <div class="codewindow">
+        <code class="code">&lt;i&gt;Italic text.&lt;&#x2F;i&gt;</code>
+        </div>
+      </div>
+      <!-- Emphase -->
+      <div class="containers">
+        <h2 class="titles">Emphase</h2>
+        <p class="info">Represent an important part of the document</p>
+        <div class="codewindow">
+          <code class="code">&lt;em&gt;This is an embed text&lt;&#x2F;em&gt;</code>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Bold -->
+      <div class="containers">
+        <h2 class="titles">Bold</h2>
+        <p class="info">Represent a bold text in the document. <br/>Used for text that might be clear but that is not very important.</p>
+        <div class="codewindow">
+        <code class="code">&lt;b&gt;This is bold text.&lt;&#x2F;b&gt;</code>
+        </div>
+      </div>
+      <!-- Italic -->
+      <div class="containers">
+        <h2 class="titles">Italic</h2>
+        <p class="info">Represent an italic text the document</p>
+        <div class="codewindow">
+          <code class="code">&lt;italic&gt;This is an italic text.&lt;&#x2F;italic&gt;</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- Links-->
+    <div>
+      <h1 class="categories" id="links">Links</h1>
+    </div>    
+
+    <div class="container">
+      <!-- Anchors -->    
+      <div class="containers">
+        <h2 class="titles">Anchor</h2>
+        <p class="info">Represent an anchor that can be use to navigate to a specific place in the document, download something or link to another website.</p>
+        <div class="codewindow">
+        <code class="code">&lt;a&gt;This is an anchor.&lt;&#x2F;a&gt;</code>
+        </div>
+      </div>
+      <!-- Abbreviation -->
+      <div class="containers">
+        <h2 class="titles">Abbreviation</h2>
+        <p class="info">Represent an important part of the document.</p>
+        <div class="codewindow">
+          <code class="code">&lt;abbr&gt;This is an abbreviation.&lt;&#x2F;abbr&gt;</code>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- E-mail -->
+      <div class="containers">
+        <h2 class="titles">E-mail</h2>
+        <p class="info">Represent a link that opens e-mail client.</p>
+        <div class="codewindow">
+        <code class="code">&lt;a href="mailto:test@gmail.com"&gt;Click here to send an e-mail.&lt;&#x2F;a&gt;</code>
+        </div>
+      </div>
+      <!-- Phone -->
+      <div class="containers">
+        <h2 class="titles">Phone</h2>
+        <p class="info">Represent a link that calls a number. <br>Use with country numbers.</p>
+        <div class="codewindow">
+          <code class="code">&lt;a href="phone:+33601020304"&gt;Click here to call.&lt;&#x2F;a&gt;</code>
+        </div>
+      </div>
+    </div>
+
+        <!-- Images & medias -->
+    <div>
+      <h1 class="categories" id="medias">Images & medias</h1>
+    </div>   
+
+    <div class="container">
+      <!-- Audio -->
+      <div class="containers">
+        <h2 class="titles">Audio</h2>
+        <p class="info">Represent an audio element in the document. <br/>Supported formats are mp3, acc, ogg and wav (to avoid).</p>
+        <div class="codewindow">
+          <code class="code">&lt;audio controls autoplay loop preload="auto|metadata|none"&gt;
+            <br/>
+            &nbsp;&nbsp;&lt;source src="example.mp3" type="audio/mpeg"&gt;
+            <br/>
+            &nbsp;&nbsp;&lt;source src="example.ogg" type="audio/ogg"&gt;
+            <br/>
+            &nbsp;&nbsp;&lt;source src="example.acc" type="audio/acc"&gt;
+            <br/>
+            &nbsp;&nbsp;&lt;source src="example.wav type="audio/wav"&gt;
+            <br/>
+            &lt;&#x2F;audio&gt;</code>
+        </div>
+      </div>
+
+      <!-- Video -->
+      <div class="containers">
+        <h2 class="titles">Video</h2>
+        <p class="info">Represent a video in the document. <br/>Supported container formats are AVI, MP4, MKV... <br/>Video supported codecs are H.264, Ogg Theora and WebM. <br>Audio supported codecs are the same than on audio element.</p>
+        <div class="codewindow">
+        <code class="code">&lt;video src="test.mp4" poster="image.jpg" width="720px" heigth="480px" controls autoplay loop&gt;<br/>&lt;video&#x2F;&gt;</code>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Image -->
+      <div class="containers">
+        <h2 class="titles">Image</h2>
+        <p class="info">Represent an image in the document.</p>
+        <div class="codewindow">
+        <code class="code">&lt;img src="test.jpg" alt="alternative text"&#x2F;&gt;</code>
+        </div>
+      </div>
+
+      <!-- Image in figure -->
+      <div class="containers">
+        <h2 class="titles">Image in figure</h2>
+        <p class="info">Represent an image contained into a figure on the document. <br/> Should be use with an image directly representing the page, not for decoration.</p>
+        <div class="codewindow">
+          <code class="code">&lt;figure&gt;
+            <br/>
+            &nbsp;&nbsp;&lt;img src="test.jpg" alt="alternative text"&#x2F;&gt;
+            <br/>
+            &nbsp;&nbsp;&lt;figcaption&gt;This is the figcaption.&lt;&#x2F;figcaption&gt;
+            <br/>
+            &lt;&#x2F;figure&gt;</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lists-->
+    <div>
+      <h1 class="categories" id="lists">Lists</h1>
+    </div> 
+
+    <div class="container">
+      <!-- Ordered list -->
+      <div class="containers">
+        <h2 class="titles">Ordered list</h2>
+        <p class="info">Represent an ordered list in the document.</p>
+        <div class="codewindow">
+        <code class="code">&lt;ol&gt;
+            <br/>
+            &nbsp;&nbsp;&lt;li&gt;First element&lt;&#x2F;li&gt;
+            <br/>
+            &nbsp;&nbsp;&lt;li&gt;Second element&lt;&#x2F;li&gt;
+            <br/>
+            &lt;&#x2F;ol&gt;</code>
+        </div>
+      </div>
+
+      <!-- Unordered list -->
+      <div class="containers">
+        <h2 class="titles">Unordered list</h2>
+        <p class="info">Represent an important part of the document</p>
+        <div class="codewindow">
+          <code class="code">&lt;ul&gt;
+            <br/>
+            &nbsp;&nbsp;&lt;li&gt;First element&lt;&#x2F;li&gt;
+            <br/>
+            &nbsp;&nbsp;&lt;li&gt;Second element&lt;&#x2F;li&gt;
+            <br/>
+            &lt;&#x2F;ul&gt;</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- Forms-->
+    <div>
+      <h1 class="categories" id="forms">Forms</h1>
+    </div> 
+
+    <div class="container">
+      <!-- Form -->
+      <div class="containers">
+        <h2 class="titles">Form</h2>
+        <p class="info">Represent a form in the document.</p>
+        <div class="codewindow">
+        <code class="code">&lt;form&gt;&lt;&#x2F;form&gt;</code>
+        </div>
+      </div>
+
+      <!-- Input -->
+      <div class="containers">
+        <h2 class="titles">Input</h2>
+        <p class="info">Represent an input in the form.</p>
+        <div class="codewindow">
+          <code class="code">&lt;input&gt;&lt;&#x2F;input&gt;</code>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Label -->
+      <div class="containers">
+        <h2 class="titles">Label</h2>
+        <p class="info">Represent a label for an input in a form.</p>
+        <div class="codewindow">
+        <code class="code">&lt;label&gt;&lt;&#x2F;label&gt;</code>
+        </div>
+      </div>
+
+      <!-- Input -->
+      <div class="containers">
+        <h2 class="titles">Input</h2>
+        <p class="info">Represent an input in the form.</p>
+        <div class="codewindow">
+          <code class="code">&lt;ul&gt;&lt;&#x2F;ul&gt;</code>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Tables-->
+    <div>
+      <h1 class="categories" id="tables">Tables</h1>
+    </div> 
+
+    <div class="container">
+      <!-- Table -->
+      <div class="containers">
+        <h2 class="titles">Table</h2>
+        <p class="info">Represent a table in the document.</p>
+        <div class="codewindow">
+          <code class="code">&lt;table&gt;&lt;&#x2F;table&gt;</code>
+        </div>
+      </div>
+
+      <!-- Caption -->
+      <div class="containers">
+        <h2 class="titles">Caption</h2>
+        <p class="info">Represent the caption of a table.</p>
+        <div class="codewindow">
+          <code class="code">&lt;caption&gt;&lt;&#x2F;caption&gt;</code>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Special characters -->
+    <div>
+      <h1 class="categories" id="special">Special characters</h1>
+    </div>
+
+    <div class="container">
+      <!-- < -->
+      <div class="containers">
+        <h2 class="titles"><</h2>
+        <div class="codewindow">
+          <code class="code">& lt</code>
+        </div>
+      </div>
+
+      <!-- > -->
+      <div class="containers">
+        <h2 class="titles">></h2>
+        <div class="codewindow">
+          <p class="code">& gt</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <!-- &amp -->
+      <div class="containers">
+        <h2 class="titles">&</h2>
+        <div class="codewindow">
+        <p class="code">& amp</p>
+        </div>
+      </div>
+
+      <!-- &quot -->
+      <div class="containers">
+        <h2 class="titles">&quot</h2>
+        <div class="codewindow">
+          <p class="code">& quot</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Copyright -->
+      <div class="containers">
+        <h2 class="titles">&copy;</h2>
+        <div class="codewindow">
+        <p class="code">& copy</p>
+        </div>
+      </div>
+
+      <!-- Trademark -->
+      <div class="containers">
+        <h2 class="titles">&trade;</h2>
+        <div class="codewindow">
+          <p class="code">& trade</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
